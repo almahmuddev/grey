@@ -25,7 +25,7 @@ header {
     display: flex;
     gap: 3rem;
     font-size: 1.5rem;
-    color: #0c463c;
+    color: #000000;
     font-weight: 600;
     align-items: center;
     margin-top: -.8rem;
@@ -33,6 +33,7 @@ header {
 
 .logo {
     font-size: 5rem;
+    color: #cf3a2c;
 }
 
 .special {
@@ -40,7 +41,7 @@ header {
 }
 
 .fa-solid {
-    color: #ffc107;
+    color: #cf3a2c;
 }
 
 .fa-phone {
@@ -51,8 +52,8 @@ header {
     display: none;
     font-size: 1.5rem;
     padding: .6rem .7rem;
-    background-color: #0c463c;
-    border: 1px solid #0c463c;
+    background-color: transparent;
+    border: 1px solid #cf3a2c;
     border-radius: 5px;
 }
 
@@ -66,7 +67,7 @@ header {
 }
 
 .nav-container nav ul {
-    background-color: #ffc107;
+    background-color: #cf3a2c;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -76,14 +77,14 @@ header {
 
 .nav-container nav a {
     font-family: "M PLUS Rounded 1c", sans-serif;
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.2rem;
     text-decoration: none;
 }
 
 .nav-container nav a:hover {
-    color: #393838;
+    color: #000000;
 }
 
 
@@ -106,11 +107,6 @@ header {
     .logo {
         font-size: 4.5rem;
     }
-    
-    .fa-solid {
-        color: #ffc107;
-    }
-
     .fa-phone {
         margin-top: 1rem;
     }
@@ -239,27 +235,6 @@ header {
         display: flex;
         justify-content: flex-end;
     }
-    
-    .nav-container nav ul {
-        background-color: #ffc107;
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-        padding: 1.6rem 2.7rem;
-        border-radius: 45px;
-    }
-    
-    .nav-container nav a {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        color: #000000;
-        font-weight: 700;
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
-    
-    .nav-container nav a:hover {
-        color: #393838;
-    }
 }
 
 
@@ -268,8 +243,10 @@ header {
 
 @media screen and (max-width: 640px) {
     header {
+        width: auto;
         display: flex;
-        padding: .7rem 1.5rem;
+        padding: .7rem .95rem .7rem 1.45rem;
+        /* justify-content: space-between; */
     }
     
     .contact-info {
@@ -288,45 +265,59 @@ header {
     .special {
         padding-top: .9rem;
     }
+
+    .menu-bar {
+        width: 10%;
+    }
     
     .hamburger-menu {
         display: block;
         font-size: 1.5rem;
-        padding: .5rem .7rem;
-        border: 1px solid #ffc107;
-        border-radius: 5px;
+        padding: .5rem .8rem;
     }
     
     .nav-container {
         display: none;
-    }
-    
-    .nav-container nav ul {
-        background-color: #ffc107;
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-        padding: 1.6rem 2.7rem;
-        border-radius: 45px;
-    }
-    
-    .nav-container nav a {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        color: #000000;
-        font-weight: 700;
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
-    
-    .nav-container nav a:hover {
-        color: #393838;
     }
 }
 
 
 /* Breakpoint for smaller mobile device */
 
+@media screen and (max-width: 380px) {
+    header {
+        padding: .7rem 1.4rem;
+    }
+    
+    .contact-info {
+        width: 90%;
+        display: flex;
+        gap: 1rem;
+        font-size: 1.15rem;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    .special {
+        padding: 0rem;
+    }
+    
+    .fa-phone {
+        margin-top: .5rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        font-size: 1.3rem;
+        padding: .6rem .7rem;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+}
 
 
-        /* QUERY  STOPPED DUE TO NOT SUPPORTED WIDTH  */
 

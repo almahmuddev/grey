@@ -1,13 +1,8 @@
-
-
-html{
+html {
     scroll-behavior: auto;
 }
 
-
-
-.banner,
-.charity {
+.banner, .charity {
     background: linear-gradient(to right, #091f1b, transparent),
         url('../images/banner-two-bg.png');
     background-repeat: no-repeat;
@@ -42,8 +37,8 @@ html{
 }
 
 span {
-    color: #FFD700;
-    font-family: 'Lobster', sans-serif;
+    color: #cf3a2c;
+    font-family: "Sansita", sans-serif;
 }
 
 .banner .img-1,
@@ -96,7 +91,7 @@ span {
 }
 
 .stories {
-    background-color: #edeeef;
+    background-color: #ffffff;
     background-image: url("../images/shape-hand.png");
     background-repeat: no-repeat;
     background-size: 20%;
@@ -141,7 +136,7 @@ span {
 
 .overlay {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -155,7 +150,7 @@ span {
 .overlay h3,
 .overlay p,
 .overlay a {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -176,11 +171,69 @@ span {
 .our-story a {
     font-size: 1.25rem;
     font-weight: 600;
-    font-family: "lobster", sans-serif;
+    font-family: "Sansita", sans-serif;
     text-decoration: none;
-    color: #0c463c;
+    color: #cf3a2c;
 }
 
+
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+
+    .banner,
+    .charity {
+        height: 90vh;
+    }
+
+    .banner h2,
+    .charity h2 {
+        width: 65%;
+        text-align: start;
+        color: white;
+        font-size: 5rem;
+        line-height: 115%;
+    }
+
+
+    .overlay h3 {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .second h3 {
+        margin-top: .5rem;
+    }
+
+    /* .third h3 {
+    margin-top: -5.1rem;
+} */
+
+    .overlay p,
+    .overlay a {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .overlay h3,
+    .our-story h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: .6rem;
+    }
+
+    .overlay p,
+    .our-story p {
+        font-size: 1.25rem;
+    }
+
+    .overlay a,
+    .our-story a {
+        font-size: 1.15rem;
+    }
+}
 
 
 
@@ -265,9 +318,9 @@ span {
     .banner,
     .charity {
         height: 60vh !important;
-        width: 100%;
+        width: auto;
         display: flex;
-        padding: 0 2rem;
+        padding-left: 2rem ;
     }
 
     .banner h2,
@@ -318,8 +371,17 @@ span {
 
     .overlay {
         position: absolute;
-        top: 53%;
+        top: 50%;
         left: 50%;
+    }
+
+    .second h3 {
+        margin-top: 1.5rem !important;
+    }
+
+    .third h3 {
+        margin-top: 1rem !important;
+        width: 70% !important;
     }
 
     .overlay h3,
@@ -451,5 +513,101 @@ span {
     .our-story a {
         font-size: 1rem;
         font-weight: 600;
+    }
+}
+
+
+/* Breakpoint for mobile device */
+
+@media screen and (max-width: 380px) {
+
+    .banner,
+    .charity {
+        height: 45vh;
+        width: 100%;
+    }
+
+    .banner h2,
+    .charity h2 {
+        width: auto;
+        text-align: start;
+        font-size: 2.5rem;
+        line-height: 115%;
+    }
+
+    .banner .img-1,
+    .charity .img-1 {
+        max-width: 20%;
+    }
+
+    .banner .img-2,
+    .charity .img-2 {
+        position: absolute;
+        bottom: 3%;
+        right: 7%;
+        max-width: 13%;
+        height: 30%;
+    }
+
+
+    .stories {
+        background-color: #ffffff;
+        background-image: url("../images/shape-hand.png");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        padding: 3rem 0;
+        display: grid;
+        width: 100%;
+        gap: 20px;
+        animation: moveBg 10s infinite ease-in-out;
+    }
+
+
+    .story {
+        position: relative;
+        /* max-width: 400px; */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay h3 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .overlay p,
+    .overlay a {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+    .overlay h3,
+    .our-story h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .overlay p,
+    .our-story p {
+        font-size: 1.15rem;
+    }
+
+    .overlay a,
+    .our-story a {
+        font-size: 1.15rem;
     }
 }

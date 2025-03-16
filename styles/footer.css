@@ -1,34 +1,29 @@
 
 
 footer {
-    background-color: #ffc107;
+    background-color: #cf3a2c;
     width: 100%;
     height: auto;
     display: grid;
 
 }
-/* .footer-content {
-    justify-content: space-around;
-} */
 
 .footer-content nav {
     padding: 2rem 5rem;
     display: flex;
-    justify-content: space-between;
-}
-
-.footer-content img {
-    justify-content: start;
 }
 
 .footer-content nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    padding: 2rem 0 0 0;
+    /* padding: 2rem 5rem; */
 }
 
 .footer-content nav a {
     font-family: "M PLUS Rounded 1c", sans-serif;
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.2rem;
     text-decoration: none;
@@ -38,7 +33,76 @@ footer {
     color: #393838;
 }
 
-.footer-content p {
+.footer-des {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    color: #ffffff;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 1025px) and (max-width:1200px) {}
+
+
+
+/* Breakpoint for tablet device */
+
+@media screen and (min-width: 769px) and (max-width:1024px) {}
+
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 641px) and (max-width:768px) {
+    
+    .footer-content nav {
+        padding: 2rem 2rem;
+    }
+    .footer-des {
+        padding: 1.5rem 0 2rem 0;
+    }
+}
+
+
+
+/* Breakpoint for small device */
+
+@media screen and (max-width: 640px) {
+    
+    .footer-content nav {
+        padding: 2rem 1.5rem;
+    }
+    .footer-des {
+        padding: 1.5rem 0 2rem 0;
+    }
+}
+
+
+
+/* Breakpoint for mobile device */
+
+@media screen and (max-width: 380px) {
+    
+    .footer-content nav {
+        padding: 3rem 1.5rem;
+    }
+    
+    .footer-content nav a {
+        font-size: 1.3rem;
+    }
+
+    
+    .footer-des {
+        text-align: center;
+        padding: 0 1.5rem 3rem 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    
+    }
 }

@@ -1,5 +1,5 @@
 #our-events {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .events-img {
@@ -45,13 +45,13 @@
 }
 
 .events-img p, #new-profit-school p {
-    color: #FFC107;
-    font-family: "Lobster", sans-serif;
-    width: 75%;
+    color: #ffffff;
+    font-family: "Sansita", sans-serif;
+    width: 85%;
     margin: 0 auto;
     font-size: 2.5rem;
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 135%;
     text-align: center;
     animation: fadeIn 1.5s ease-in-out;
@@ -79,7 +79,8 @@
 }
 
 .events {
-    height: 80vh;
+    /* height: 80vh; */
+    height: auto;
     padding: 0 5rem;
     display: flex;
     gap: 1.5rem;
@@ -88,7 +89,7 @@
 
 .present {
     width: 55%;
-    height: 70vh;
+    height: auto;
     border-radius: 5px;
     padding: 2rem;
     position: relative;
@@ -144,22 +145,23 @@
 .present address,
 .one address,
 .two address {
+    font-family: "Sansita", sans-serif;
     font-weight: 600;
-    color: white;
+    color: #ffffff;
     font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
 .upcoming {
     width: 45%;
-    height: 70vh;
+    height: auto;
     display: grid;
     gap: 1.5rem;
 }
 
 .one,
 .two {
-    height: 31.3vh;
+    height: 33vh;
     border-radius: 5px;
     padding: 1.5rem;
     position: relative;
@@ -374,6 +376,7 @@
         padding: 0 2rem;
         display: grid;
         margin-top: 3rem;
+        gap: 1.3rem;
     }
 
     .present {
@@ -440,7 +443,7 @@
     }
 
     .events {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
         display: grid;
         margin-top: 3rem;
     }
@@ -454,7 +457,7 @@
     .present p,
     .one p,
     .two p {
-        color: #ffffff;
+
         font-size: .9rem;
         padding-bottom: .6rem;
     }
@@ -480,6 +483,88 @@
     .one,
     .two {
         width: auto;
+    }
+}
+
+
+/* Breakpoint for mobile device */
+
+
+@media screen and (max-width: 380px) {
+    #our-events {
+        margin-top: 0;
+    }
+    
+    .events-img {
+        padding-top: 1rem;
+        height: 45vh;
+    }
+    
+    #our-events h2, #new-profit-school h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem 0;
+    }
+    
+    .events-img p, #new-profit-school p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        line-height: 135%;
+        text-align: center;
+    }
+    
+    .events {
+        height: auto;
+        padding: 0 1.5rem;
+        display: grid;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .present {
+        width: auto;
+        height: 30vh;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+    
+    .present p,
+    .one p,
+    .two p {
+        color: #ffffff;
+        font-size: .9rem;
+        font-weight: 600;
+        padding-bottom: .4rem;
+    }
+    
+    .present h4,
+    .one h4,
+    .two h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    
+    .present address,
+    .one address,
+    .two address {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    .upcoming {
+        width: auto;
+        height: auto;
+        display: grid;
+        gap: 1rem;
+    }
+    
+    .one,
+    .two {
+        height: 28vh;
+        padding: 1.5rem;
+        color: #ffffff;
     }
 }
 

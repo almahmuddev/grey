@@ -66,7 +66,7 @@
 
 .story-one:hover,
 .story-two:hover {
-    border: 1px solid #FFC107;
+    border: 1px solid #cf3a2c;
 }
 
 .story-one:hover .inner-content,
@@ -83,11 +83,11 @@
     font-weight: 500;
     /* letter-spacing: 2px; */
     word-spacing: 2px;
-    color: #122f2a;
+    color: #0b211e;
 }
 
 .inner-content a {
-    color: #FFC107;
+    color: #cf3a2c;
     font-size: 1.1rem;
 }
 
@@ -139,9 +139,9 @@
 
     .our-story {
         display: grid;
-        width: calc(90% - 4rem);
+        width: calc(90% - 2.5rem);
         margin: 0 2rem;
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .story-one,
@@ -151,17 +151,18 @@
     }
 
     .inner-content h3 {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
+        margin: 0 auto;
+        padding-bottom: 1.2rem;
     }
 
     .inner-content p {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         letter-spacing: 1px;
     }
 
     .inner-content a {
-        color: #FFC107;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
 }
@@ -169,45 +170,70 @@
 /* Breakpoint for mobile device */
 
 @media screen and (max-width: 640px) {
+    
     #stories-of-hope h2 {
-        font-size: 2.2rem;
         padding: 3rem 1.5rem;
-        line-height: 130%;
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
     }
-
+    
     .our-story {
-        width: calc(100% - 5rem);
+        width: calc(100% - 5.9rem);
         display: grid;
-        margin: 0 2rem 3.5rem 1.5rem;
-        gap: 1.5rem;
+        margin: 1rem 1.5rem;
+        gap: 1.2rem;
+    
     }
-
+    
     .story-one,
     .story-two {
         width: 100%;
-        padding: 1.3rem;
-    }
-
-    .inner-content h3 {
-        font-size: 1.3rem;
-    }
-
-    .inner-content p {
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-    }
-
-    .inner-content a {
-        color: #FFC107;
-        font-size: 1rem;
     }
     
+    .inner-content h3 {
+        padding-top: 1.2rem;
+    }
 }
 
 
 /* Breakpoint for smaller mobile device */
 
+@media screen and (max-width: 380px) {
+    
+    #stories-of-hope h2 {
+        padding: 3rem 0 1.5rem 1.5rem;
+        font-size: 2.5rem;
+
+    }
+    
+    .our-story {
+        width: calc(100% - 3rem);
+        display: grid;
+        margin: 1.5rem;
+        gap: 1.3rem;
+    
+    }
+    
+    .story-one,
+    .story-two {
+        width: auto;
+        border-radius: 10px;
+        padding: 1.3rem;
+    }
+    
+    .inner-content h3 {
+        padding-top: 1.5rem;
+    }
+    
+    .inner-content p {
+        font-weight: 500;
+        /* letter-spacing: 2px; */
+        word-spacing: 2px;
+        color: #0b211e;
+    }
+}
 
 
-        /* QUERY  STOPPED DUE TO NOT SUPPORTED WIDTH  */
+
+
 
