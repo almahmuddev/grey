@@ -1,0 +1,213 @@
+
+
+#stories-of-hope {
+    background-image: linear-gradient(rgba(128, 128, 128, 0) 70%,
+            rgba(255, 255, 255, 1)), url("../images/shape-sc-1.png");
+    width: 100%;
+    height: auto;
+}
+
+#stories-of-hope h2 {
+    display: block;
+    padding: 5rem;
+    color: #122f2a;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 4.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 115%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.our-story {
+    display: flex;
+    margin: 5rem;
+    gap: 1.7rem;
+
+}
+
+.story-one,
+.story-two {
+    width: 50%;
+    border: 1px solid #122f2a;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.story-one .inner-content,
+.story-two .inner-content {
+    transition: transform 0.9s ease;
+}
+
+.story-one img,
+.story-two img {
+    width: 100%;
+    border: 5px transparent;
+    border-radius: 8px;
+}
+
+.story-one a,
+.story-two a {
+    text-decoration: none;
+}
+
+.story-one:hover,
+.story-two:hover {
+    border: 1px solid #FFC107;
+}
+
+.story-one:hover .inner-content,
+.story-two:hover .inner-content {
+    transform: scale(1.05);
+}
+
+.inner-content h3 {
+    padding-top: 1.5rem;
+}
+
+.inner-content p {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    color: #122f2a;
+}
+
+.inner-content a {
+    color: #FFC107;
+    font-size: 1.1rem;
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #stories-of-hope h2 {
+        font-size: 4rem;
+        padding: 3rem 0 0 3rem;
+        line-height: 130%;
+    }
+
+    .our-story {
+        margin: 3rem;
+        gap: 1.3rem;
+    }
+
+    .story-one,
+    .story-two {
+        padding: 1rem;
+    }
+
+    .inner-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .inner-content p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        word-spacing: 2px;
+    }
+
+    .inner-content a {
+        color: #FFC107;
+        font-size: 1rem;
+    }
+}
+
+/* Breakpoint for small device (tablet) */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    #stories-of-hope h2 {
+        font-size: 3rem;
+        padding: 3rem 0 3rem 2rem;
+        line-height: 130%;
+    }
+
+    .our-story {
+        display: grid;
+        width: calc(90% - 4rem);
+        margin: 0 2rem;
+        gap: 1rem;
+    }
+
+    .story-one,
+    .story-two {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .inner-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .inner-content p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .inner-content a {
+        color: #FFC107;
+        font-size: 1rem;
+    }
+    
+}
+
+/* Breakpoint for mobile device */
+
+@media screen and (max-width: 640px) {
+    #stories-of-hope h2 {
+        font-size: 2.2rem;
+        padding: 3rem 1.5rem;
+        line-height: 130%;
+    }
+
+    .our-story {
+        width: calc(100% - 5rem);
+        display: grid;
+        margin: 0 2rem 3.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .story-one,
+    .story-two {
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+    .inner-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .inner-content p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .inner-content a {
+        color: #FFC107;
+        font-size: 1rem;
+    }
+    
+}
+
+
+/* Breakpoint for smaller mobile device */
+
+
+
+        /* QUERY  STOPPED DUE TO NOT SUPPORTED WIDTH  */
+

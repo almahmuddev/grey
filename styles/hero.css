@@ -1,0 +1,455 @@
+
+
+html{
+    scroll-behavior: auto;
+}
+
+
+
+.banner,
+.charity {
+    background: linear-gradient(to right, #091f1b, transparent),
+        url('../images/banner-two-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img[src="images/shape.png"],
+.charity img[src="images/shape.png"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.banner h2,
+.charity h2 {
+    width: 50%;
+    text-align: start;
+    color: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 5.3rem;
+    line-height: 115%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+span {
+    color: #FFD700;
+    font-family: 'Lobster', sans-serif;
+}
+
+.banner .img-1,
+.charity .img-1 {
+    max-width: 30%;
+    animation: floatUpDown 2s ease-in-out infinite alternate;
+}
+
+.banner .img-2,
+.charity .img-2 {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    max-width: 15%;
+    height: 35%;
+    animation: zoomInOut 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.stories {
+    background-color: #edeeef;
+    background-image: url("../images/shape-hand.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    padding: 5rem 0;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    animation: moveBg 5s infinite ease-in-out;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: left top;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    100% {
+        background-position: left top;
+    }
+}
+
+.story {
+    position: relative;
+    /* max-width: 400px; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.story-content {
+    position: relative;
+    width: 100%;
+}
+
+.story-content img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h3,
+.overlay p,
+.overlay a {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.overlay h3,
+.our-story h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.overlay p,
+.our-story p {
+    font-size: 1.25rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.overlay a,
+.our-story a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "lobster", sans-serif;
+    text-decoration: none;
+    color: #0c463c;
+}
+
+
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+
+    .banner,
+    .charity {
+        height: 70vh;
+    }
+
+    .banner h2,
+    .charity h2 {
+        font-size: 4rem;
+        width: auto;
+    }
+
+    .banner .img-1,
+    .charity .img-1 {
+        max-width: 10%;
+    }
+
+    .banner .img-2,
+    .charity .img-2 {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        max-width: 30%;
+        height: 35%;
+    }
+
+    .stories {
+        background-size: 25%;
+        padding: 3rem 0;
+    }
+
+    .story-content img {
+        height: 50vh;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+    }
+
+    .overlay h3,
+    .overlay p,
+    .overlay a {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .overlay h3,
+    .our-story h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .unique {
+        margin-top: .9rem;
+    }
+
+    .overlay p,
+    .our-story p {
+        font-size: 1.1rem;
+    }
+
+    .overlay a,
+    .our-story a {
+        font-size: 1rem;
+
+    }
+}
+
+
+/* Breakpoint for small device */
+
+@media screen and (min-width:641px) and (max-width: 768px) {
+
+    .banner,
+    .charity {
+        height: 60vh !important;
+        width: 100%;
+        display: flex;
+        padding: 0 2rem;
+    }
+
+    .banner h2,
+    .charity h2 {
+        width: 100%;
+        text-align: start;
+        font-size: 3rem;
+        line-height: 120%;
+    }
+
+    .banner .img-1,
+    .charity .img-1 {
+        display: none;
+    }
+
+    .banner .img-2,
+    .charity .img-2 {
+        position: absolute;
+        top: 7%;
+        left: 10%;
+        max-width: 19%;
+        height: 35%;
+    }
+
+    .stories {
+        background-image: url("../images/shape-hand.png");
+        background-size: 25%;
+        padding: 3rem 0;
+        display: grid;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .story {
+        position: relative;
+        width: 110%;
+    }
+
+    .story-content {
+        position: relative;
+        width: 100%;
+    }
+
+    .story-content img {
+        width: 100%;
+        display: block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+    }
+
+    .overlay h3,
+    .overlay p,
+    .overlay a {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .unique {
+        margin-top: .7rem;
+    }
+
+    .overlay h3,
+    .our-story h3 {
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .overlay p,
+    .our-story p {
+        font-size: 1.25rem;
+    }
+
+    .overlay a,
+    .our-story a {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Breakpoint for small device */
+
+@media screen and (max-width: 640px) {
+
+    .banner,
+    .charity {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .banner img[src="images/shape.png"],
+    .charity img[src="images/shape.png"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .banner h2,
+    .charity h2 {
+        width: 100%;
+        font-size: 2.2rem;
+        line-height: 125%;
+    }
+
+    .banner .img-1,
+    .charity .img-1 {
+        max-width: 35%;
+    }
+
+    .banner .img-2,
+    .charity .img-2 {
+        position: absolute;
+        bottom: 5%;
+        right: 7%;
+        max-width: 20%;
+        height: 35%;
+    }
+
+    .stories {
+        background-repeat: no-repeat;
+        background-size: 25%;
+        padding: 3rem 0;
+        display: grid;
+        width: 100%;
+        gap: 20px;
+        animation: moveBg 9s infinite ease-in-out;
+    }
+
+    .story {
+        position: relative;
+        width: 105%;
+    }
+
+    .story-content {
+        position: relative;
+    }
+
+    .story-content img {
+        width: 100%;
+        display: block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .overlay h3,
+    .overlay p,
+    .overlay a {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .overlay h3,
+    .our-story h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .overlay p,
+    .our-story p {
+        font-size: 1.15rem;
+    }
+
+    .overlay a,
+    .our-story a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

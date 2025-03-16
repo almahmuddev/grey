@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url('../images/shape-sc-1.png'); */
+    /* scroll-behavior:calc(30%); */
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 100;
+    padding: .7rem 5rem;
+    height: auto;
+}
+
+.contact-info {
+    width: 45%;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    color: #0c463c;
+    font-weight: 600;
+    align-items: center;
+    margin-top: -.8rem;
+}
+
+.logo {
+    font-size: 5rem;
+}
+
+.special {
+    padding-top: 1rem;
+}
+
+.fa-solid {
+    color: #ffc107;
+}
+
+.fa-phone {
+    margin-top: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    padding: .6rem .7rem;
+    background-color: #0c463c;
+    border: 1px solid #0c463c;
+    border-radius: 5px;
+}
+
+.nav-container {
+    width: 55%;
+    display: block;
+
+    /* visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; */
+}
+
+.nav-container nav ul {
+    background-color: #ffc107;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 1.6rem 2.7rem;
+    border-radius: 45px;
+}
+
+.nav-container nav a {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-container nav a:hover {
+    color: #393838;
+}
+
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    header {
+        padding: .7rem 4rem;
+    }
+    
+    .contact-info {
+        width: 38%;
+        gap: 1.7rem;
+        font-size: 1.2rem;
+        align-items: center;
+        margin-top: -.8rem;
+    }
+    
+    .logo {
+        font-size: 4.5rem;
+    }
+    
+    .fa-solid {
+        color: #ffc107;
+    }
+
+    .fa-phone {
+        margin-top: 1rem;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+    
+    .nav-container {
+        width: 62%;
+        display: block;
+    }
+    
+    nav ul {
+        padding: 1.4rem 2.3rem;
+    }
+    
+    nav a {
+        font-size: 1.15rem;
+    }
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        padding: .7rem 3rem;
+        height: auto;
+        align-items: center;
+    }
+    
+    .contact-info {
+        width: 90%;
+        gap: 5rem;
+        font-size: 1.6rem;
+        margin-top: -.8rem;
+    }
+    
+    .logo {
+        font-size: 4.3rem;
+    }
+    
+    .special {
+        padding-top: 1.3rem;
+    }
+
+    .menu-bar {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .hamburger-menu {
+        font-size: 1.7rem;
+        padding: .5rem .7rem;
+        background-color: #0c463c;
+        border: 1.5px solid #ffc107;
+        border-radius: 6px;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+    
+    .nav-container nav ul {
+        background-color: #ffc107;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 1.6rem 2.7rem;
+        border-radius: 45px;
+    }
+    
+    .nav-container nav a {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        color: #000000;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    .nav-container nav a:hover {
+        color: #393838;
+    }
+}
+
+
+/* Breakpoint for small device */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    header {
+        display:flex;
+        padding: .7rem 2rem;
+    }
+    
+    .contact-info {
+        width: 90%;
+        display: flex;
+        gap: 5rem;
+        font-size: 1.3rem;
+        margin-top: -.8rem;
+    }
+    
+    .logo {
+        font-size: 3.3rem;
+    }
+    
+    .special {
+        padding-top: 1rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        font-size: 1.6rem;
+        padding: .6rem .8rem;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+
+    .menu-bar {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-container nav ul {
+        background-color: #ffc107;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 1.6rem 2.7rem;
+        border-radius: 45px;
+    }
+    
+    .nav-container nav a {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        color: #000000;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    .nav-container nav a:hover {
+        color: #393838;
+    }
+}
+
+
+
+/* Breakpoint for mobile device */
+
+@media screen and (max-width: 640px) {
+    header {
+        display: flex;
+        padding: .7rem 1.5rem;
+    }
+    
+    .contact-info {
+        width: 90%;
+        display: flex;
+        gap: 5rem;
+        font-size: 1.15rem;
+        align-items: center;
+        margin-top: -.8rem;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .special {
+        padding-top: .9rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        font-size: 1.5rem;
+        padding: .5rem .7rem;
+        border: 1px solid #ffc107;
+        border-radius: 5px;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+    
+    .nav-container nav ul {
+        background-color: #ffc107;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 1.6rem 2.7rem;
+        border-radius: 45px;
+    }
+    
+    .nav-container nav a {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        color: #000000;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    .nav-container nav a:hover {
+        color: #393838;
+    }
+}
+
+
+/* Breakpoint for smaller mobile device */
+
+
+
+        /* QUERY  STOPPED DUE TO NOT SUPPORTED WIDTH  */
+

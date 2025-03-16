@@ -1,0 +1,119 @@
+
+
+#new-profit-school {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url("../images/school\ -\ Copy.webp") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#new-profit-school::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(54, 53, 53, 0.288) 70%);
+    /* backdrop-filter: blur(1px); */
+    pointer-events: none;
+}
+
+#new-profit-school img[src="images/shape.png"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #new-profit-school {
+        margin-top: 1rem;
+        padding-top: 1.5rem !important;
+        width: 100%;
+        height: 60vh;
+    }
+
+    #new-profit-school::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(52, 52, 52, 0.416) 70%);
+    }
+    
+    #new-profit-school h2 {
+        font-size: 4rem !important;
+    }
+
+    #new-profit-school p {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2.2rem !important;
+        font-weight: 500;
+        letter-spacing: 4px;
+        line-height: 135%;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+}
+
+
+/* Breakpoint for tallet device */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    #new-profit-school {
+        margin-top: 1rem;
+        padding-top: 1.5rem !important;
+        width: 100%;
+        height: 60vh;
+    }
+
+    #new-profit-school::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(38, 30, 30, 0.466) 70%);
+    }
+    
+    #new-profit-school h2 {
+        font-size: 3rem !important;
+    }
+
+    #new-profit-school p {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.9rem !important;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+}
+
+
+
+/* Breakpoint for small device */
+
+@media screen and (max-width: 640px) {
+    #new-profit-school {
+        margin-top: 1rem;
+        padding-top: 1.5rem !important;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #new-profit-school::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(58, 58, 58, 0.466) 70%);
+    }
+    
+    #new-profit-school h2 {
+        font-size: 2.2rem !important;
+    }
+
+    #new-profit-school p {
+        width: 85%;
+        font-size: 1.6rem !important;
+    }
+}

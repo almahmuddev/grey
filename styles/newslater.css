@@ -1,0 +1,163 @@
+#subscribe {
+    background: linear-gradient(to right, #091f1b, #143631);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-top: 7rem;
+}
+
+#subscribe h2 {
+    font-size: 2.9rem;
+    color: aliceblue;
+    padding: 1rem 0 0 5rem;
+}
+
+.newslater {
+    padding: 2rem 5rem 0 0;
+}
+
+.newslater input {
+    font-size: 1.1rem;
+    font-family: "lobster", sans-serif;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+}
+
+.newslater button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    background-color: #FFC107;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #subscribe {
+        height: 30vh;
+        width: 100%;
+        display: grid;
+        margin: 3rem 0;
+        padding-top: 3rem;
+    }
+
+    #subscribe h2 {
+        font-size: 3.4rem;
+        padding-left: 3rem;
+    }
+
+    .newslater {
+        padding: 2rem 3rem;
+    }
+
+    .newslater input {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        padding: 1.2rem 2rem;
+        margin-right: 1rem;
+    }
+    
+    .newslater button {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        background-color: #FFC107;
+        padding: 1.2rem 2rem;
+    }
+
+
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    #subscribe {
+        height: 30vh;
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding-top: 0;
+    }
+
+    #subscribe h2 {
+        font-size: 2.4rem;
+        color: aliceblue;
+        padding: 3rem 0 0 2rem;
+    }
+
+    .newslater {
+        padding: 2rem 2rem;
+    }
+
+    .newslater input {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        padding: 1.2rem 2rem;
+        margin-right: 1rem;
+    }
+    
+    .newslater button {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        background-color: #FFC107;
+        padding: 1.2rem 2rem;
+    }
+
+}
+
+
+/* Breakpoint for medium device */
+
+@media screen and (max-width: 640px) {
+    #subscribe {
+        height: 30vh;
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    
+    #subscribe h2 {
+        font-size: 2.3rem;
+        padding-left: 2rem;
+    }
+    
+    .newslater {
+        padding: 0 0 3rem 2rem;
+    }
+    
+    .newslater input {
+        font-size: 1.2rem;
+        padding: 1.2rem 2rem;
+        letter-spacing: 2px;
+        margin-right: .7rem;
+    }
+    
+    .newslater button {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+        background-color: #FFC107;
+        padding: 1.2rem 2rem;
+    }
+}
+
+
+/* Breakpoint for smaller mobile device */
+
+
+
+    /* QUERY  STOPPED DUE TO NOT SUPPORTED WIDTH  */

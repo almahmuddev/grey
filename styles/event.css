@@ -1,0 +1,527 @@
+#our-events {
+    margin-top: 1.5rem;
+}
+
+.events-img {
+    padding-top: 3rem;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: 100%;
+    background: url("../images/banner-bg.png") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.events-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(2, 31, 25, 0), rgba(6, 24, 21, 0.7));
+}
+
+#our-events h2, #new-profit-school h2 {
+    color: #ffffff;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 5.5rem;
+    text-align: center;
+    display: block;
+    padding: 2.5rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1.5s ease-out forwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.char {
+    opacity: 0;
+    transform: translateY(10px);
+    display: inline-block;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.events-img p, #new-profit-school p {
+    color: #FFC107;
+    font-family: "Lobster", sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 135%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.events-img img {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    /* max-width: 50%; */
+    min-width: auto;
+    height: 25%;
+    object-fit: cover;
+    animation: zoomInOut 1.5s ease-in-out infinite alternate;
+}
+
+.events-img img[src="images/shape.png"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.events {
+    height: 80vh;
+    padding: 0 5rem;
+    display: flex;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.present {
+    width: 55%;
+    height: 70vh;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    transition: transform 0.4s ease-in-out;
+}
+
+.present:hover {
+    transform: scale(1.02);
+}
+
+.present::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(33, 33, 33, 0.6)),
+        url("../images/poster-1.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.present a,
+.upcoming a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.present p,
+.one p,
+.two p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: .8rem;
+}
+
+.present h4,
+.one h4,
+.two h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.present address,
+.one address,
+.two address {
+    font-weight: 600;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.upcoming {
+    width: 45%;
+    height: 70vh;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.one,
+.two {
+    height: 31.3vh;
+    border-radius: 5px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    transition: transform 0.7s ease-in-out;
+}
+
+.one:hover,
+.two:hover {
+    transform: scale(1.02);
+}
+
+.one {
+    background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(33, 33, 33, 0.6)),
+        url("../images/health.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(33, 33, 33, 0.6)),
+        url("../images/hope.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Breakpoint for large device */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #our-events {
+        margin-top: 1.5rem;
+    }
+
+    .events-img {
+        height: 80vh;
+    }
+
+
+    #our-events h2, #new-profit-school h2{
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-size: 4.5rem;
+    }
+
+    .events-img p, #new-profit-school p {
+        width: 82%;
+        margin: 0 auto;
+        font-size: 2.4rem;
+        letter-spacing: 4px;
+    }
+
+    .events-img img {
+        top: 5%;
+        left: 15%;
+        /* max-width: 50%; */
+    }
+
+    .events {
+        height: 65vh;
+        padding: 0 4.5rem;
+    }
+
+    .present {
+        width: 55%;
+        height: 55vh;
+    }
+
+    .present p,
+    .one p,
+    .two p {
+        padding-bottom: .15rem;
+    }
+
+    .present h4,
+    .one h4,
+    .two h4 {
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+    }
+
+    .present address,
+    .one address,
+    .two address {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        padding-bottom: 0;
+    }
+
+    .upcoming {
+        width: 45%;
+        height: 65vh;
+        gap: 1.3rem;
+    }
+
+    .one,
+    .two {
+        height: 23vh;
+    }
+
+    .one:hover,
+    .two:hover {
+        transform: scale(1.02);
+    }
+
+    .one {
+        background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(33, 33, 33, 0.6)),
+            url("../images/health.webp");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .two {
+        background: linear-gradient(rgba(36, 35, 35, 0.6), rgba(33, 33, 33, 0.6)),
+            url("../images/hope.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #our-events h2{
+        font-size: 4rem;
+    }
+
+    .events-img {
+        height: 60vh;
+    }
+
+    .events-img p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+
+    .events {
+        padding: 0 3rem;
+        display: grid;
+        margin-top: 3rem;
+    }
+
+    .present {
+        width: auto;
+        height: 50vh;
+        border-radius: 5px;
+    }
+
+    .present p,
+    .one p,
+    .two p {
+        color: #ffffff;
+        font-size: 1rem;
+        padding-bottom: .6rem;
+    }
+
+    .present h4,
+    .one h4,
+    .two h4 {
+        font-size: 1.7rem;
+    }
+
+    .present address,
+    .one address,
+    .two address {
+        font-size: 1.05rem;
+    }
+
+    .upcoming {
+        width: 100%;
+        display: flex;
+        gap: 1.3rem;
+    }
+
+    .one,
+    .two {
+        width: 50%;
+        padding: 1.5rem;
+    }
+}
+
+/* Breakpoint for medium device */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    #our-events h2 {
+        font-size: 3rem;
+    }
+
+    .events-img {
+        height: 60vh;
+    }
+
+    .events-img img {
+        top: 15%;
+        left: 10%;
+    }
+
+    .events-img p {
+        width: 90%;
+        font-size: 1.9rem;
+        letter-spacing: 3px;
+    }
+
+    .events {
+        padding: 0 2rem;
+        display: grid;
+        margin-top: 3rem;
+    }
+
+    .present {
+        width: auto;
+        height: 50vh;
+        border-radius: 5px;
+    }
+
+    .present p,
+    .one p,
+    .two p {
+        color: #ffffff;
+        font-size: 1rem;
+        padding-bottom: .6rem;
+    }
+
+    .present h4,
+    .one h4,
+    .two h4 {
+        font-size: 1.7rem;
+    }
+
+    .present address,
+    .one address,
+    .two address {
+        font-size: 1.05rem;
+    }
+
+    .upcoming {
+        width: 100%;
+        display: grid;
+        gap: 1.3rem;
+    }
+
+    .one,
+    .two {
+        width: auto;
+    }
+}
+
+/* Breakpoint for mobile device */
+
+
+@media screen and (max-width: 640px) {
+    #our-events h2 {
+        font-size: 2.2rem;
+    }
+
+    .events-img p {
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+        width: 90%;
+        line-height: 135%;
+        text-align: center;
+    }
+
+    .events-img {
+        height: 50vh;
+    }
+
+    .events-img img {
+        top: 15%;
+        left: 15%;
+    }
+
+    .events {
+        padding: 0 2rem;
+        display: grid;
+        margin-top: 3rem;
+    }
+
+    .present {
+        width: auto;
+        height: 35vh;
+        border-radius: 5px;
+    }
+
+    .present p,
+    .one p,
+    .two p {
+        color: #ffffff;
+        font-size: .9rem;
+        padding-bottom: .6rem;
+    }
+
+    .present h4,
+    .one h4,
+    .two h4 {
+        font-size: 1.5rem;
+    }
+
+    .present address,
+    .one address,
+    .two address {
+        font-size: 1rem;
+    }
+
+    .upcoming {
+        width: 100%;
+        display: grid;
+        gap: 1.3rem;
+    }
+
+    .one,
+    .two {
+        width: auto;
+    }
+}
+
+
+
+/* Media queries for events-img gradient */
+
+
+@media (max-width: 768px) {
+    .events-img::after {
+        width: 40%;
+        background: linear-gradient(to left, rgba(6, 24, 21, 0), rgba(6, 24, 21, 0.85));
+    }
+}
+
+@media (max-width: 480px) {
+    .events-img::after {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .events-img::after {
+        width: 20%;
+    }
+}
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+        /* Adjusted zoom amount */
+    }
+}
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Move to original position */
+    }
+}
