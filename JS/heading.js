@@ -47,6 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// JavaScript for Curtain Menu Toggle
+const menuButton = document.querySelector(".hamburger-menu");
+const closeButton = document.querySelector("#closeMenu");
+const curtainMenu = document.querySelector("#curtainMenu");
+
+menuButton.addEventListener("click", () => {
+    curtainMenu.classList.add("menu-active");
+});
+
+closeButton.addEventListener("click", () => {
+    curtainMenu.classList.remove("menu-active");
+});
+
+
+
 
 
 

@@ -240,73 +240,79 @@ span {
 /* Breakpoint for medium device */
 
 @media screen and (min-width:769px) and (max-width: 1024px) {
-
-    .banner,
-    .charity {
-        height: 70vh;
-    }
-
+    
     .banner h2,
     .charity h2 {
+        width: 80%;
         font-size: 4rem;
-        width: auto;
+        line-height: 121%;
+        margin-left: -1.5rem;
     }
 
-    .banner .img-1,
-    .charity .img-1 {
-        max-width: 10%;
-    }
-
+    
     .banner .img-2,
     .charity .img-2 {
-        position: absolute;
-        bottom: 5%;
-        right: 5%;
-        max-width: 30%;
-        height: 35%;
+        height: 30%;
     }
-
+    
     .stories {
         background-size: 25%;
-        padding: 3rem 0;
+        padding: 4rem 0;
+        display: grid;
+        animation: moveBg 10s infinite ease-in-out;
     }
-
+    
+    .story {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .story-content {
+        position: relative;
+        width: 100%;
+    }
+    
     .story-content img {
-        height: 50vh;
+        width: 100%;
+        display: block;
     }
-
+    
     .overlay {
         position: absolute;
-        top: 60%;
+        top: 62%;
         left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     .overlay h3,
     .overlay p,
     .overlay a {
         width: 85%;
         margin: 0 auto;
     }
-
+    
     .overlay h3,
     .our-story h3 {
-        font-size: 1.4rem;
+        font-size: 1.9rem;
+        font-weight: 700;
         margin-bottom: 1rem;
     }
-
-    .unique {
-        margin-top: .9rem;
-    }
-
+    
     .overlay p,
     .our-story p {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
-
+    
     .overlay a,
     .our-story a {
-        font-size: 1rem;
-
+        font-size: 1.15rem;
     }
 }
 
@@ -419,101 +425,91 @@ span {
 
 @media screen and (max-width: 640px) {
 
-    .banner,
-    .charity {
-        height: 50vh;
+    .banner, .charity {
+        height: 60vh;
         width: 100%;
         display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
     }
-
-    .banner img[src="images/shape.png"],
-    .charity img[src="images/shape.png"] {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
+    
     .banner h2,
     .charity h2 {
         width: 100%;
-        font-size: 2.2rem;
-        line-height: 125%;
+        font-size: 2.7rem;
+        line-height: 115%;
+        margin-left: -5rem;
     }
-
-    .banner .img-1,
-    .charity .img-1 {
-        max-width: 35%;
-    }
-
+    
     .banner .img-2,
     .charity .img-2 {
-        position: absolute;
-        bottom: 5%;
-        right: 7%;
-        max-width: 20%;
-        height: 35%;
+        max-width: 15%;
+        height: 25%;
     }
-
+    
+    
     .stories {
-        background-repeat: no-repeat;
         background-size: 25%;
         padding: 3rem 0;
         display: grid;
         width: 100%;
-        gap: 20px;
-        animation: moveBg 9s infinite ease-in-out;
+        animation: moveBg 10s infinite ease-in-out;
     }
-
+    
     .story {
         position: relative;
-        width: 105%;
+        /* max-width: 400px; */
+        width: 100%;
+        overflow: hidden;
     }
-
+    
     .story-content {
         position: relative;
+        width: 100%;
     }
-
+    
     .story-content img {
         width: 100%;
         display: block;
     }
-
+    
     .overlay {
         position: absolute;
-        top: 61%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .overlay h3,
-    .overlay p,
-    .overlay a {
-        width: 90%;
+    .overlay h3 {
+        width: 80%;
         margin: 0 auto;
     }
 
+    .first-one {
+        margin-top: -.5rem;
+    }
+    
+    .overlay p,
+    .overlay a {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
     .overlay h3,
     .our-story h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: 700;
         margin-bottom: 1rem;
     }
-
-    .overlay p,
-    .our-story p {
-        font-size: 1.15rem;
-    }
-
+    
     .overlay a,
     .our-story a {
-        font-size: 1rem;
-        font-weight: 600;
-    }
+        font-size: 1.15rem;
+}
 }
 
 
@@ -551,6 +547,7 @@ span {
 
 
     .stories {
+        display: none;
         background-color: #ffffff;
         background-image: url("../images/shape-hand.png");
         background-repeat: no-repeat;

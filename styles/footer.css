@@ -47,13 +47,30 @@ footer {
 
 /* Breakpoint for medium device */
 
-@media screen and (min-width: 1025px) and (max-width:1200px) {}
+@media screen and (min-width: 1025px) and (max-width:1200px) {
+    
+    .footer-content nav {
+        padding: 2rem 3rem;
+        display: flex;
+    }
+}
 
 
 
 /* Breakpoint for tablet device */
 
-@media screen and (min-width: 769px) and (max-width:1024px) {}
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    
+    .footer-content nav {
+        padding: 2rem 3rem;
+        display: flex;
+    }
+    
+    .footer-des {
+        font-size: 1.2rem;
+    
+    }
+}
 
 
 
@@ -79,6 +96,7 @@ footer {
         padding: 2rem 1.5rem;
     }
     .footer-des {
+        font-size: 1.15rem;
         padding: 1.5rem 0 2rem 0;
     }
 }
